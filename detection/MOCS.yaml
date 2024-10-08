@@ -1,0 +1,10 @@
+train: E:/COCO/yolov8-test/data/train
+val: E:/COCO/yolov8-test/data/val
+test: E:/COCO/yolov8-test/data/test
+
+# number of classes
+nc: 2
+# class labels + 1 (background) 
+
+# class names
+names: ['back','worker']
