@@ -103,24 +103,6 @@ def copy_mini_images(mini_data, img_dir, mini_img_dir):
         dst_path = os.path.join(mini_img_dir, img['file_name'])
         shutil.copyfile(src_path, dst_path)
 
-'''
-train_json_file = r"E:\MOCS_dataset\instances_train.json"
-train_img_dir = r"E:\MOCS_dataset\instances_train\instances_train"
-val_json_file = r"E:\MOCS_dataset\instances_val.json"
-val_img_dir = r"E:\MOCS_dataset\instances_val\instances_val"
-train_data = load_json(train_json_file)
-val_data = load_json(val_json_file)
-mini_train_data = create_mini_dataset(train_data, max_per_class=50)
-mini_val_data = create_mini_dataset(val_data, max_per_class=50)
-
-
-# create mini dataset every class 50 images
-
-save_json(mini_train_data, r"E:\MOCS_dataset\instances_train_mini.json")
-save_json(mini_val_data, r"E:\MOCS_dataset\instances_val_mini.json")
-copy_mini_images(mini_train_data, train_img_dir, r"E:\MOCS_dataset\instances_train_mini")
-copy_mini_images(mini_val_data, val_img_dir, r"E:\MOCS_dataset\instances_val_mini")
-'''
 
 # create mini dataset with interesting classes from train and val
 interesting_classes_id = [7,8]
